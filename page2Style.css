@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#titleText {
+  padding: 0.7em 0;
+  font-size: 3.5vw;
+  background-color: #303030;
+  color: white;
+}
+
+#dText, #wText {
+  font-size: 2vw;
+}
+
+.column1 input {
+  margin: 2.7vw 0;
+}
+
+.column2 input {
+  margin: 3vw 0;
+}
+
+input {
+  padding: 1vw 0;
+  width: 14vw;
+  height: 2vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1vw;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4vw 1vw;
+  margin-bottom: 3vw;
+  background-color: #00bfff;
+  color: white;
+}
+
+.tippy-content {
+    font-size: 1.1vw;
+    padding: 0.3vw;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dHelp, .wHelp {
+  color: white;
+  border: 0.1vw solid black;
+  padding: 0.5vw;
+  font-size: 1.25vw;
+}
+
+
+span {
+  background-color: #303030;
+}
+
+/* Close button functionality */
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  transform: rotate(45deg);
+}
+
+#close:hover {
+  cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    color: black;
+}
+
+#backButton, #calcButton {
+   border: none;
+   border: 1px solid #00bfff;
+   text-align: center;
+   font-size: 1.5vw;
+   padding: 0.8vw;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin-left: 5vw;
+ }
+
+#backPageButton:visited, #calcButton:visited {
+    color: black;
+}
+
+ #calcButton {
+   width: 15%;
+ }
+
+ #backButton span, #calcButton span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+   background-color: white;
+ }
+
+ #backButton:hover, #calcButton:hover {
+   background-color: black;
+ }
+
+
+ #backButton span:after, #calcButton span:after {
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -1vw;
+   transition: 0.5s;
+ }
+
+#backButton:hover span, #calcButton:hover span {
+   background-color: black;
+   padding: 0 0.2vw;
+   color: #00bfff;
+ }
+
+
+#backButton:hover span:after, #calcButton:hover span:after {
+   opacity: 1;
+   right: 0;
+ }

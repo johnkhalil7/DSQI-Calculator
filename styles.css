@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ****** MAIN PAGE STYLING *****  */
+
+/* **** S1 FORM STYLING **** */
+
+.main {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #00bfff;
+  margin-bottom: 3%;
+}
+
+.sForm div:not(.sInformation) {
+  margin: 2vw 0;
+  margin-bottom: 3.5vw;
+}
+
+#titleText {
+  padding: 0.7em 0;
+  font-size: 3.5vw;
+  background-color: #303030;
+  color: white;
+}
+
+#headerText {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  font-size: 2.5vw;
+  background-color: #00bfff;
+  color: white;
+}
+
+#d1Val {
+  width: 1.7vw;
+}
+
+input:not([type=checkbox]) {
+  width: 14vw;
+  height: 2vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+
+input::-webkit-input-placeholder {
+  font-size: 1.25vw;
+}
+
+
+/* **** S1 Help Box STYLING **** */
+
+.sHelp {
+  color: white;
+  border: 0.1vw solid black;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  transition: 0.1s ease-in;
+}
+
+.sHelp:hover, #close:hover {
+  cursor: pointer;
+}
+
+.sHelp:hover {
+  background-color: black;
+}
+
+.sInformation, .overallErrors {
+  background-color: #303030;
+  color: white;
+  position: relative;
+  padding: 0vw 3vw;
+  padding-bottom: 1vw;
+  font-size: 1.25vw;
+  margin-top: 2vw;
+  margin-bottom: -3vw;
+}
+
+.tippy-content {
+    font-size: 1.1vw;
+    padding: 0.5vw;
+}
+
+#s1ValInformation, #s4ValInformation, #s7ValInformation {
+  left: 20px;
+}
+
+#s3ValInformation, #s6ValInformation {
+  right: 20px;
+}
+
+li {
+  list-style-position: inside;
+}
+
+/* Close button functionality */
+
+#close {
+  position: absolute;
+  top: -1vw;
+  right: 0.5em;
+  transform: rotate(45deg);
+}
+
+
+/* Error Box */
+
+.overallErrors {
+  width: 50%;
+  margin: 1em auto;
+}
+
+.overallErrors #close {
+  top: 1vw;
+}
+
+/* Button styling */
+
+#nextPageButton {
+   border: none;
+   border: 1px solid #7FDBFF;
+   text-align: center;
+   font-size: 1.5vw;
+   padding: 0.8vw;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 11vw 0;
+
+ }
+
+ #nextPageButton:visited {
+    color: black;
+  }
+
+ #nextPageButton span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+
+ #nextPageButton:hover {
+   background-color: black;
+   color: #7FDBFF;
+ }
+
+ #nextPageButton span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -1vw;
+   transition: 0.5s;
+   color: #7FDBFF;
+ }
+
+#nextPageButton:hover span {
+   padding-right: 1.5vw;
+   color: #7FDBFF;
+ }
+
+#nextPageButton:hover span:after {
+   opacity: 1;
+   right: 0;
+   color: #7FDBFF;
+ }
